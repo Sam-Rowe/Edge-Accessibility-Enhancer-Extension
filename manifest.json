@@ -34,6 +34,8 @@
                 "content-scripts/content.js",
                 "content-scripts/line-height.css",
                 "content-scripts/yellow-overlay.css",
+                "content-scripts/blue-overlay.css",
+                "content-scripts/green-overlay.css",
                 "content.js"
             ],
             "matches": [
