@@ -1,12 +1,42 @@
 {
     "name":"Experimental neurodiverse extension helper",
-    "version": "0.0.0.1",
+    "version": "0.0.0.2",
     "manifest_version": 3,
-    "description": "An experimental extension to help nerodiverse folk find the web easier to interact with",
+    "description": "An experimental extension to help nerodiverse folk onboard with Enterprise employers support",
     "icons": {
         "128":"icons/icon.png"
     },
     "action": {
         "default_popup": "popup/popup.html"
-    }
+    },
+    "permissions": [
+        "fontSettings",
+        "storage",
+        "tabs",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": ["<all_urls>"],
+    "content_scripts": [
+        {
+            "matches": [
+              "<all_urls>"
+            ],
+            "js": ["content-scripts/content.js"]
+        }
+    ],
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "popup/popup.html",
+                "popup/popup.js",
+                "popup/popup.css",
+                "content-scripts/content.js",
+                "content.js"
+            ],
+            "matches": [
+                "<all_urls>"
+            ]
+        }
+    ]
 }
