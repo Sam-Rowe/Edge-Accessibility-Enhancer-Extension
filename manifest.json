@@ -32,6 +32,7 @@
                 "popup/popup.js",
                 "popup/popup.css",
                 "content-scripts/content.js",
+                "content-scripts/content.css",
                 "content.js"
             ],
             "matches": [
