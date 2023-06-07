@@ -32,7 +32,8 @@
                 "popup/popup.js",
                 "popup/popup.css",
                 "content-scripts/content.js",
-                "content-scripts/content.css",
+                "content-scripts/line-height.css",
+                "content-scripts/yellow-overlay.css",
                 "content.js"
             ],
             "matches": [

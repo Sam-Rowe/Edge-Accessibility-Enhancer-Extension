@@ -11,11 +11,11 @@ chrome.runtime.onMessage.addListener(
             }
         }
 
-        if (request.message === "toggle_overlay") {
+        if (request.message === "toggle_yellow_overlay") {
             if (request.isChecked) {
                 // Load the stylesheet
                 var link = document.createElement("link");
-                link.href = chrome.runtime.getURL("content-scripts/content.css");
+                link.href = chrome.runtime.getURL("content-scripts/yellow-overlay.css");
                 link.type = "text/css";
                 link.rel = "stylesheet";
                 document.getElementsByTagName("head")[0].appendChild(link);
@@ -23,12 +23,34 @@ chrome.runtime.onMessage.addListener(
                 // Remove the stylesheet
                 var links = document.getElementsByTagName("link");
                 for (var i = links.length - 1; i >= 0; i--) {
-                    if (links[i].href === chrome.runtime.getURL("content-scripts/content.css")) {
+                    if (links[i].href === chrome.runtime.getURL("content-scripts/yellow-overlay.css")) {
                         links[i].parentNode.removeChild(links[i]);
                     }
                 }
             }
         }
+
+        if (request.message === "toggle_lineHeight") {
+            if (request.isChecked) {
+                // Load the stylesheet
+                var link = document.createElement("link");
+                link.href = chrome.runtime.getURL("content-scripts/line-height.css");
+                link.type = "text/css";
+                link.rel = "stylesheet";
+                document.getElementsByTagName("head")[0].appendChild(link);
+            } else {
+                // Remove the stylesheet
+                var links = document.getElementsByTagName("link");
+                for (var i = links.length - 1; i >= 0; i--) {
+                    if (links[i].href === chrome.runtime.getURL("content-scripts/line-height.css")) {
+                        links[i].parentNode.removeChild(links[i]);
+                    }
+                }
+            }
+        }
+
     }
+
+    
 );
 
