@@ -1,6 +1,6 @@
 {
     "name":"Experimental neurodiverse extension helper",
-    "version": "0.0.0.3",
+    "version": "0.1",
     "manifest_version": 3,
     "description": "An experimental extension to help nerodiverse folk onboard with Enterprise employers support",
     "icons": {
