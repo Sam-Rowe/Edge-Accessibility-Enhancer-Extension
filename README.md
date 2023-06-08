@@ -16,7 +16,7 @@ Click "Load unpacked" and select the folder you just unzipped.
 
 Once installed, you can click on the extension icon to open the popup. The popup will show you a list of all the extensions you have installed, click on the eye icon to toggle the visibility of the extension on or off.
 
-Once you have made it visible on your browser you should see the ![logo](./images/icon.png) icon in the top right of your browser. Clicking on this will open the extension popup.
+Once you have made it visible on your browser you should see the ![logo](./icons/icon.png) icon in the top right of your browser. Clicking on this will open the extension popup.
 
 On the popup there are some checkboxes to enable features of the extension. You can enable or disable any of these at any time. However if you disable either of the font changes it will refresh the tab you are on! 
 
