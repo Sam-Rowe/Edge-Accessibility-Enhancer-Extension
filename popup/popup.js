@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (dyslexicFontID){
         dyslexicFontID.onclick = function() {
+            
             let isChecked = dyslexicFontID.checked;
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                 chrome.scripting.executeScript({
@@ -21,6 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (dyslexicFontID){
         dyslexicFontID.onclick = function() {
+            
             let isChecked = dyslexicFontID.checked;
             chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
                 chrome.scripting.executeScript({
@@ -105,3 +107,5 @@ document.addEventListener("DOMContentLoaded", function() {
         };
     }
 });
+
+
